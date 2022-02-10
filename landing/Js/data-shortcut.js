@@ -54,11 +54,11 @@ if (window.matchMedia("(max-width: 991px)").matches) {
 
     boton.addEventListener("click", function() {
         if (!despliegue) {
-            document.getElementById('desplegable').style.top = "33%";
+            document.getElementById('desplegable').style.top = "0%";
 
             despliegue = true;
         } else {
-            document.getElementById('desplegable').style.top = "83%";
+            document.getElementById('desplegable').style.top = "50%";
             despliegue = false;
         }
     });
