@@ -66,7 +66,6 @@ services_options.appendChild(Options);
 var menu = document.getElementById('menu');
 var cancel_menu = document.getElementById('cancel-menu');
 
-var menu_inter = document.getElementById('menu-int');
 var change = false;
 menu.addEventListener('click', () => {
     if (!change) {
@@ -78,7 +77,7 @@ menu.addEventListener('click', () => {
 
 cancel_menu.addEventListener('click', () => {
     console.log('si')
-    if (!change) {
+    if (change) {
         document.getElementById('menu-des').style.left = ("-80%")
 
         cancel_menu.style.visibility = "hidden";

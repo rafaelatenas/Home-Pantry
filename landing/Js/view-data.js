@@ -9,10 +9,13 @@ window.document.title = ('|Atenas|' + ' ' + data_of_tittle);
 var menu = document.getElementById('menu');
 var cancel_menu = document.getElementById('cancel-menu');
 
-var menu_inter = document.getElementById('menu-int');
+
 var change = false;
+var cambio = false;
 menu.addEventListener('click', () => {
-    if (!change) {
+    console.log('si')
+    if (!cambio) {
+
         cancel_menu.style.visibility = "visible";
         menu.style.visibility = "hidden";
         document.getElementById('menu-des').style.left = ("0%");
@@ -21,14 +24,17 @@ menu.addEventListener('click', () => {
 
 cancel_menu.addEventListener('click', () => {
     console.log('si')
-    if (!change) {
+    if (!cambio) {
         document.getElementById('menu-des').style.left = ("-80%")
 
         cancel_menu.style.visibility = "hidden";
         menu.style.visibility = "visible";
     }
 })
-
+const prueba = document.getElementById('menu')
+prueba.addEventListener('click', () => {
+    console.log('click')
+})
 
 const button_dropdown = document.getElementById('button-dropdown');
 const rotate = document.getElementById('rotate')

@@ -13,10 +13,19 @@ var cancel_menu = document.getElementById('cancel-menu');
 var menu_inter = document.getElementById('menu-int');
 var change = false;
 menu.addEventListener('click', () => {
+    if (!change) {
+        cancel_menu.style.visibility = "visible";
+        menu.style.visibility = "hidden";
+        document.getElementById('menu-des').style.left = ("0%");
+    }
+})
+
+cancel_menu.addEventListener('click', () => {
         if (!change) {
-            cancel_menu.style.visibility = "visible";
-            menu.style.visibility = "hidden";
-            document.getElementById('menu-des').style.left = ("0%");
+            document.getElementById('menu-des').style.left = ("-80%")
+
+            cancel_menu.style.visibility = "hidden";
+            menu.style.visibility = "visible";
         }
     })
     //---- Alert Temporal de disposición de servicios----
@@ -54,14 +63,7 @@ if (window.matchMedia("(max-width: 991px)").matches) {
             despliegue = false;
         }
     });
-    cancel_menu.addEventListener('click', () => {
-        if (!change) {
-            document.getElementById('menu-des').style.left = ("-80%")
 
-            cancel_menu.style.visibility = "hidden";
-            menu.style.visibility = "visible";
-        }
-    })
 
     //---Disabled button link---//
     // Elemento desactivado segùn lectura de datos obtenidos mediante la API. Recordar integrar Matchmedia para desactivar
@@ -80,14 +82,14 @@ if (window.matchMedia("(max-width: 991px)").matches) {
 
 
 
-    //--- Popup Activade---//
-    active_modal.addEventListener('click', () => {
-        popup.style.visibility = "visible";
+    // //--- Popup Activade---//
+    // active_modal.addEventListener('click', () => {
+    //     popup.style.visibility = "visible";
 
-    })
-    close_modal.addEventListener('click', () => {
-        popup.style.visibility = "";
-    })
+    // })
+    // close_modal.addEventListener('click', () => {
+    //     popup.style.visibility = "";
+    // })
 
     //---- Alert Temporal de disposición de servicios----
     var alert_message = document.getElementById('alert-message');
