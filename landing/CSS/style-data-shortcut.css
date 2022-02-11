@@ -36,23 +36,41 @@ main {
 }
 
 .atenas-logo {
-    width: 80%;
+    width: 100%;
     height: 80%;
+}
+
+.logo-atenas {
+    display: none;
 }
 
 #select-of-categories {
     grid-row: 2/3;
-    grid-column: 3/5;
-    width: 100%;
-    height: 60%;
-}
-
-#select-of-categories select {
+    grid-column: 3/6;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+#select {
+    width: 80%;
+    height: 100%;
     color: #fff;
-    background: #045ea8;
+    background: #03508f;
     border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0px 0px 27px 1px rgba(2, 44, 78, 0.99);
+    box-shadow: 0px 0px 27px 1px rgba(2, 44, 78, 0.99);
+}
+
+#select img {
+    width: 15%;
+    height: 100%;
 }
 
 .services {
@@ -63,6 +81,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    overflow: visible;
 }
 
 .primary-services {
@@ -71,7 +91,7 @@ main {
     justify-content: space-between;
     overflow: visible;
     width: 95%;
-    height: 25%;
+    height: 20%;
 }
 
 .home {
@@ -80,8 +100,8 @@ main {
     border-radius: 1.5em;
     border: none;
     background: #F6B232;
-    /* -webkit-box-shadow: 0px 0px 34px 10px #022E52;
-    box-shadow: 0px 0px 34px 10px #022E52; */
+    -webkit-box-shadow: 0px 0px 27px 1px rgba(2, 44, 78, 0.99);
+    box-shadow: 0px 0px 27px 1px rgba(2, 44, 78, 0.99);
 }
 
 #home-pantry {
@@ -95,14 +115,16 @@ main {
     border-radius: 1.5em;
     border: none;
     background: #2FAC6A;
-    /* -webkit-box-shadow: 0px 0px 20px 10px #022E52;
-    box-shadow: 0px 0px 20px 10px #022E52; */
+    -webkit-box-shadow: 0px 0px 27px 1px rgba(2, 44, 78, 0.99);
+    box-shadow: 0px 0px 27px 1px rgba(2, 44, 78, 0.99);
 }
 
 .scanning a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 #retailscanning {
@@ -113,6 +135,7 @@ main {
 .complementary-services {
     width: 100%;
     height: 75%;
+    overflow: visible;
 }
 
 .buttons-complementary {
@@ -122,9 +145,9 @@ main {
     grid-gap: 5%;
     align-items: center;
     justify-items: center;
-    margin-top: 5%;
     width: 100%;
     height: 100%;
+    overflow: visible;
 }
 
 #icon-cuota-mercado,
@@ -137,9 +160,23 @@ main {
     border: none;
     display: flex;
     justify-content: center;
+    -webkit-box-shadow: 0px 0px 27px 1px rgba(2, 44, 78, 0.99);
+    box-shadow: 0px 0px 27px 1px rgba(2, 44, 78, 0.99);
 }
 
-#icon-cuota-mercado a,
+#icon-cuota-mercado a {
+    text-decoration: none;
+    color: #03508f;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 58%;
+    height: 100%;
+    font-size: 12px;
+}
+
 #icon-penetracion a,
 #icon-recompra a,
 #icon-precio a {
@@ -150,13 +187,13 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 72%;
+    width: 80%;
     height: 100%;
     font-size: 12px;
 }
 
 #icon-cuota-mercado img {
-    width: 50%;
+    width: 70%;
     height: 40%;
 }
 
@@ -293,4 +330,144 @@ main {
 
 .menu ul li a:hover {
     color: #fff;
+}
+
+#previous {
+    display: none;
+}
+
+@media screen and (min-width: 992px) and (min-height: 600px) {
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+    }
+    .components-header {
+        position: absolute;
+        top: 5%;
+        left: 78%;
+        width: 18%;
+        height: 14%;
+    }
+    .atenas-logo {
+        display: none;
+    }
+    .logo-atenas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .services {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        align-items: unset;
+    }
+    .primary-services {
+        width: 25%;
+        height: 13%;
+        justify-content: space-evenly;
+        position: relative;
+        top: 15%;
+    }
+    .home,
+    .scanning {
+        width: 40%;
+        height: 90%;
+        border-radius: 2em;
+    }
+    .complementary-services {
+        margin-left: 3%;
+        width: 72%;
+        height: 100%;
+        background: #fff;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        -webkit-box-shadow: -10px 0px 17px -6px rgba(0, 0, 0, 0.5);
+        box-shadow: -10px 0px 17px -6px rgba(0, 0, 0, 0.5);
+    }
+    .buttons-complementary {
+        width: 60%;
+        height: 60%;
+        position: relative;
+        left: 15%;
+        top: 20%;
+    }
+    #desplegable {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        flex-direction: row-reverse;
+        height: 10%;
+        width: 25%;
+        justify-content: space-evenly;
+    }
+    .user {
+        width: 60%;
+        border-radius: 1em;
+        height: 55%;
+    }
+    .content-user img {
+        width: 20%;
+    }
+    .content-modi {
+        width: 15%;
+        border-radius: .5em;
+        height: 55%;
+    }
+    .bottons-menu {
+        width: 90%;
+    }
+    .home-page,
+    .user-icon {
+        display: none;
+    }
+    .menu {
+        top: 20%;
+        height: 80%;
+    }
+    #select-of-categories {
+        position: absolute;
+        left: 2%;
+        top: 50%;
+        width: 21%;
+        height: 35%;
+        border-radius: 1.5em;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #select {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #select h3 {
+        color: #03508f;
+    }
+    #previous {
+        position: fixed;
+        top: 88%;
+        left: 2%;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #previous a {
+        width: 80%;
+        height: 80%;
+    }
+    #previous img {
+        width: 100%;
+        height: 100%;
+    }
 }
