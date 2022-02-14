@@ -47,15 +47,15 @@
         </aside>
         <article class="services">
             <section class="primary-services">
-                <button href="#" class="home">
+                <button class="home">
                     <a href="#">
-                       <img id="home-pantry" src="./landing/Images/logos_BLANCO-homepantry.png" alt="Home Pantry">
+                       <img onclick="change()" id="home-pantry" src="./landing/Images/logos_BLANCO-homepantry.png" alt="Home Pantry">
                     </a>
             </button>
 
                 <button class="scanning">
                 <a href="#" >
-                    <img id="retailscanning" src="./landing/Images/logos_BLANCO-retailsscanning.png" alt="Retail Scanning">
+                    <img onclick="change()" id="retailscanning" src="./landing/Images/logos_BLANCO-retailsscanning.png" alt="Retail Scanning">
                 </a>
             </button>
 
@@ -69,10 +69,46 @@
             </article>
             <section class="complementary-services">
                 <div class="buttons-complementary" id="buttons-complementary">
-                    <button id="icon-penetracion"><iframe onclick="info_penetracion()" src="./landing/favicon/circle-info-solid.svg" frameborder="0"></iframe> <a href="#"><p>PENETRACIÓN</p><img src="./landing/Images/icon-penetracion.png" alt="WOP"></a> </button>
-                    <button id="icon-cuota-mercado"> <iframe onclick="info_cuota()"src="./landing/favicon/circle-info-solid.svg" frameborder="0"></iframe> <a href="#"><p>CUOTA DE MERCADO</p><img src="./landing/Images/icon-cuota-de-mercado.png" alt="Money Market"></a> </button>
-                    <button id="icon-precio"> <iframe onclick="info_precio()" src="./landing/favicon/circle-info-solid.svg" frameborder="0"></iframe> <a href="#"><p>PRECIO</p><img src="./landing/Images/Icon-precio.png" alt="Share ACV"></a> </button>
-                    <button id="icon-recompra"> <iframe onclick="info_recompra()" src="./landing/favicon/circle-info-solid.svg" frameborder="0"></iframe> <a href="#"><p>RECOMPRA</p><img src="./landing/Images/icon-recompra.png" alt="Ranking Retail"></a> </button>
+
+                    <button id="icon-penetracion">
+                        <iframe onclick="info_penetracion()" src="./landing/favicon/circle-info-solid.svg" frameborder="0"></iframe>
+                        <a href="#">
+                            <p id="phome1">PENETRACIÓN</p>
+                            <p>SHARE</p>
+                            <img src="./landing/Images/icon-penetracion.png" alt="WOP">
+                            <img id="imghome1" src="./landing/Images/icon-cuota-de-mercado.png" alt="Share">
+                        </a> 
+                    </button>
+
+                    <button id="icon-cuota-mercado"> 
+                        <iframe onclick="info_cuota()"src="./landing/favicon/circle-info-solid.svg" frameborder="0"></iframe> 
+                        <a href="#">
+                            <p id="phome1">CUOTA DE MERCADO</p>
+                            <p>DISTRIBUCIÓN</p>
+                            <img src="./landing/Images/icon-cuota-de-mercado.png" alt="Money Market">
+                            <img src="" alt="Distribución">
+                        </a> 
+                    </button>
+
+                    <button id="icon-precio">
+                        <iframe onclick="info_precio()" src="./landing/favicon/circle-info-solid.svg" frameborder="0"></iframe>
+                        <a href="#">
+                            <p>PRECIO</p>
+                            <p>VENTAS</p>
+                            <img src="./landing/Images/Icon-precio.png" alt="Share ACV">
+                            <img src="" alt="Ventas">
+                        </a>
+                    </button>
+
+                    <button id="icon-recompra">
+                        <iframe onclick="info_recompra()" src="./landing/favicon/circle-info-solid.svg" frameborder="0"></iframe>
+                        <a href="#">
+                            <p>RECOMPRA</p>
+                            <p>PRECIO</p>
+                            <img src="./landing/Images/icon-recompra.png" alt="Ranking Retail">
+                            <img src="./landing/Images/Icon-precio.png" alt="Precio">
+                        </a>
+                    </button>
 
                 </div>
             </section>
@@ -128,6 +164,18 @@
 
     </main>
     <script src="./landing/Js/data-shortcut.js"></script>
+    <script>
+        function change() {
+
+
+            console.log('si')
+            document.getElementById('phome1').style.display = "none";
+            document.getElementById('imghome1').style.display = "none";
+
+
+        }
+    </script>
+
 </body>
 
 </html>

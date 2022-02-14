@@ -77,7 +77,7 @@ menu.addEventListener('click', () => {
 
 cancel_menu.addEventListener('click', () => {
     console.log('si')
-    if (change) {
+    if (!change) {
         document.getElementById('menu-des').style.left = ("-80%")
 
         cancel_menu.style.visibility = "hidden";

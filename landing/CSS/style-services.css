@@ -417,6 +417,10 @@
             justify-content: space-evenly;
             align-items: center;
         }
+        .home-page,
+        .user-icon {
+            visibility: hidden;
+        }
         #Icon-Money_Market,
         #Icon-WOP,
         #Icon-Ranking_Retail,
@@ -677,6 +681,10 @@
         .bottons-menu {
             width: 80%;
             height: 80%;
+        }
+        .home-page,
+        .user-icon {
+            visibility: hidden;
         }
         #menu {
             position: absolute;
