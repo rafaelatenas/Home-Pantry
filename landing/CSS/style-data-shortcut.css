@@ -343,15 +343,22 @@ main {
     width: 20%;
     height: 12%;
     background: #2EA7DF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     border-radius: 1em;
     position: absolute;
     top: 32%;
     left: 2%;
     color: #fff;
+}
+
+#database a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    text-decoration: none;
 }
 
 #database img {
@@ -422,13 +429,22 @@ main {
         top: 30%;
         grid-gap: 10%;
     }
+    #icon-cuota-mercado,
+    #icon-penetracion,
+    #icon-recompra,
+    #icon-precio {
+        width: 70%;
+    }
+    #icon-cuota-mercado img {
+        width: 65%;
+    }
     #icon-penetracion iframe {
         display: block;
         width: 5%;
         height: 8%;
         position: absolute;
         top: 32%;
-        left: 38%;
+        left: 35%;
     }
     #icon-cuota-mercado iframe {
         display: block;
@@ -436,7 +452,7 @@ main {
         height: 8%;
         position: absolute;
         top: 32%;
-        left: 94%;
+        left: 93%;
     }
     #icon-recompra iframe {
         display: block;
@@ -444,7 +460,7 @@ main {
         height: 8%;
         position: absolute;
         top: 87%;
-        left: 38%;
+        left: 35%;
     }
     #icon-precio iframe {
         display: block;
@@ -452,7 +468,7 @@ main {
         height: 8%;
         position: absolute;
         top: 87%;
-        left: 94%;
+        left: 93%;
     }
     #desplegable {
         position: absolute;
@@ -519,6 +535,27 @@ main {
         width: 100%;
         height: 80%;
         overflow-y: scroll;
+    }
+    #options-of-selection::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    #options-of-selection::-webkit-scrollbar:vertical {
+        width: 10px;
+    }
+    #options-of-selection::-webkit-scrollbar-button:increment,
+    #options-of-selection::-webkit-scrollbar-button {
+        display: none;
+    }
+    #options-of-selection::-webkit-scrollbar:horizontal {
+        height: 10px;
+    }
+    #options-of-selection::-webkit-scrollbar-thumb {
+        background-color: #575756;
+        border-radius: 20px;
+        border: 2px solid #f1f2f3;
+    }
+    #options-of-selection::-webkit-scrollbar-track {
+        border-radius: 10px;
     }
     #previous {
         position: fixed;
